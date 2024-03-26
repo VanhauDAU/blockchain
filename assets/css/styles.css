@@ -52,6 +52,7 @@ html {
   font-size: 1.8rem;
 }
 .body .table .column {
+  position: relative;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -62,6 +63,31 @@ html {
 }
 .body .table .column:hover {
   translate: 0px -5px;
+}
+.body .table .column .loading {
+  position: absolute;
+  left: 48%;
+  top: 48%;
+  width: 30px;
+  height: 30px;
+  border: 5px solid;
+  border-color: black transparent red transparent;
+  border-radius: 50%;
+  animation: loading 1s ease infinite;
+}
+.body .info-my {
+  display: flex;
+  justify-content: space-between;
+}
+.body .my {
+  font-size: 2rem;
+  opacity: 0.6;
+  margin-top: 20px;
+}
+@keyframes loading {
+  from {
+    rotate: 360deg;
+  }
 }
 .body .table tr th:first-child,
 .body .table tr td:first-child {
@@ -77,6 +103,7 @@ html {
 .body .table td {
   padding: 10px 0px;
 }
+
 .body .table .column.continue {
   padding: 20px;
   background: #005ab7;
@@ -100,21 +127,26 @@ html {
 }
 /* responsive */
 @media screen and (max-width: 740px) {
+  .container .main-content {
+    width: 600px;
+    max-width: calc(450px - 48px);
+  }
   .header {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
   }
   .header-top {
     padding: 10px 20px;
-    width: 100%;
   }
   .header-top .logo-img {
     height: 60px;
   }
   .container .body .title {
     text-align: center;
-    width: 40%;
     line-height: 30px;
+  }
+  .container .body {
+    padding: 10px 0;
   }
   .container .body h1 {
     font-size: 2rem;
@@ -122,6 +154,9 @@ html {
   .body .table {
     grid-template-columns: 1fr;
     grid-area: auto;
-    width: min(500px, 50%);
+  }
+  .body .table th {
+    font-size: 1.7rem;
+    line-height: 25px;
   }
 }
