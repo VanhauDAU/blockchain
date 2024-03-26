@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: "Sen", sans-serif;
+  font-size: 10px;
+}
+.header {
+  padding: 10px 0;
+  background: #005ab7;
+}
+.container .main-content {
+  width: 1110px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(1110px - 48px);
+}
+.header-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-top .logo-img {
+  max-width: 100%;
+  height: 70px;
+  object-fit: cover;
+}
+.tracuuthongtin {
+  background: url(https://sinhvien.dau.edu.vn/Content/loginnews/images/city2.png);
+  height: 100px;
+  width: 100%;
+}
