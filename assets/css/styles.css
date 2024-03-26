@@ -27,8 +27,101 @@ html {
   height: 70px;
   object-fit: cover;
 }
-.tracuuthongtin {
-  background: url(https://sinhvien.dau.edu.vn/Content/loginnews/images/city2.png);
-  height: 100px;
+/* content */
+.container .body {
+  padding: 20px;
   width: 100%;
+}
+.container .body .title {
+  text-align: center;
+}
+.container .body h1 {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.container .body .title p {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+.body .table {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  font-size: 1.8rem;
+}
+.body .table .column {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #f9fafb;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.body .table .column:hover {
+  translate: 0px -5px;
+}
+.body .table tr th:first-child,
+.body .table tr td:first-child {
+  width: 30px;
+  font-weight: 600;
+}
+.body .table th {
+  text-align: start;
+  font-size: 1.9rem;
+  color: red;
+}
+.body .table th,
+.body .table td {
+  padding: 10px 0px;
+}
+.body .table .column.continue {
+  padding: 20px;
+  background: #005ab7;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.column.continue .text-continue {
+  display: inline-block;
+  padding: 5px 20px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+}
+.body .table .column.continue:hover {
+  background-color: #fcd34d;
+}
+/* responsive */
+@media screen and (max-width: 740px) {
+  .header {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  .header-top {
+    padding: 10px 20px;
+    width: 100%;
+  }
+  .header-top .logo-img {
+    height: 60px;
+  }
+  .container .body .title {
+    text-align: center;
+    width: 40%;
+    line-height: 30px;
+  }
+  .container .body h1 {
+    font-size: 2rem;
+  }
+  .body .table {
+    grid-template-columns: 1fr;
+    grid-area: auto;
+    width: min(500px, 50%);
+  }
 }

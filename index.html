@@ -34,7 +34,113 @@
 </head>
 
 <body>
+    <header class="header">
+        <div class="main-content">
+            <div class="header-top">
+                <div class="logo">
+                    <img src="./assets/img/logo_title.png" alt="" class="logo-img">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="main-content">
+                <div class="body">
+                    <div class="title">
+                        <h1>Câu hỏi ôn tập môn học BlockChain Cơ Bản (50 câu)</h1>
+                        <p>Đề thi năm học 2022</p>
+                    </div>
+                    <div class="table">
+                        <div class="column">
+                            <table>
+                                <tr>
+                                    <th colspan="2">Câu 01: BlockChain là gì?</th>
+                                </tr>
+                                <tr>
+                                    <td>A. </td>
+                                    <td>Sổ cái phân phối trên mạng ngang hàng</td>
+                                </tr>
+                                <tr>
+                                    <td>B. </td>
+                                    <td>Một loại tiền ảo</td>
+                                </tr>
+                                <tr>
+                                    <td>C. </td>
+                                    <td>Một sàn giao dịch</td>
+                                </tr>
+                                <tr>
+                                    <td>D. </td>
+                                    <td>Sổ cái tập trung</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="column">
+                            <table>
+                                <tr>
+                                    <th colspan="2">Câu 01: BlockChain là gì?</th>
+                                </tr>
+                                <tr>
+                                    <td>A. </td>
+                                    <td>Sổ cái phân phối trên mạng ngang hàng</td>
+                                </tr>
+                                <tr>
+                                    <td>B. </td>
+                                    <td>Một loại tiền ảo</td>
+                                </tr>
+                                <tr>
+                                    <td>C. </td>
+                                    <td>Một sàn giao dịch</td>
+                                </tr>
+                                <tr>
+                                    <td>D. </td>
+                                    <td>Sổ cái tập trung</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="column">
+                            <table>
+                                <tr>
+                                    <th colspan="2">Câu 01: BlockChain là gì?</th>
+                                </tr>
+                                <tr>
+                                    <td>A. </td>
+                                    <td>Sổ cái phân phối trên mạng ngang hàng</td>
+                                </tr>
+                                <tr>
+                                    <td>B. </td>
+                                    <td>Một loại tiền ảo</td>
+                                </tr>
+                                <tr>
+                                    <td>C. </td>
+                                    <td>Một sàn giao dịch</td>
+                                </tr>
+                                <tr>
+                                    <td>D. </td>
+                                    <td>Sổ cái tập trung</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="column continue" id="continue">
+                            <h2 class="text-continue">Còn tiếp, vui lòng chờ!</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        const continueDiv = document.getElementById('continue');
+        const textContinue = continueDiv.querySelector('.text-continue');
 
+        continueDiv.addEventListener('mouseover', function () {
+            textContinue.textContent = 'Khi nào siêng thì làm tiếp';
+        });
+
+        continueDiv.addEventListener('mouseleave', function () {
+            textContinue.textContent = 'Còn tiếp, vui lòng chờ!';
+        });
+    </script>
 </body>
 
 </html>
