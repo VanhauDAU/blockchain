@@ -146,7 +146,7 @@ html {
     line-height: 30px;
   }
   .container .body {
-    padding: 10px 0;
+    padding: 10px 15px;
   }
   .container .body h1 {
     font-size: 2rem;
