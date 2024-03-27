@@ -9,6 +9,16 @@ html {
   padding: 10px 0;
   background: #005ab7;
 }
+.header.fixed {
+  display: block;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+}
+.container {
+  margin-top: 100px;
+}
 .container .main-content {
   width: 1110px;
   display: flex;
@@ -64,7 +74,8 @@ html {
 .body .table .column:hover {
   translate: 0px -5px;
 }
-.body .table .column .loading {
+.body .table .column .loading::before {
+  content: "";
   position: absolute;
   left: 48%;
   top: 48%;
@@ -74,6 +85,12 @@ html {
   border-color: black transparent red transparent;
   border-radius: 50%;
   animation: loading 1s ease infinite;
+}
+.body .table .column .loading::after {
+  position: absolute;
+  content: "Loading";
+  top: 69%;
+  left: 45%;
 }
 .body .info-my {
   display: flex;
